@@ -1,7 +1,7 @@
 const { Server } = require("socket.io");
 
 // Create a new Socket.IO server instance
-const io = new Server(8000, {
+const io = new Server(8090, {
   cors: "*", // Allow CORS from all origins for demo purposes
 });
 

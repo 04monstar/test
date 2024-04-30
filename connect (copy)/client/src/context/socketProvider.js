@@ -17,7 +17,7 @@ export const SocketProvider = (props) => {
 
   useEffect(() => {
     try {
-      const newSocket = io("localhost:8000");
+      const newSocket = io("localhost:8090");
       setSocket(newSocket);
     } catch (error) {
       setError("Error connecting to the server.");
