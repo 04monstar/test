@@ -1,0 +1,37 @@
+/* code.css */
+
+.code-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .codemirror-wrapper {
+    height: 200px;
+  }
+  
+  .editor-container {
+    margin-bottom: 10px;
+  }
+  
+  .output-container {
+    margin-top: 10px;
+  }
+  
+  .output-container h2 {
+    margin-top: 0;
+  }
+  
+  .output-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .output-container li {
+    margin-bottom: 5px;
+  }
+  
+  .output-container li:last-child {
+    margin-bottom: 0;
+  }
+  

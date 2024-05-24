@@ -1,0 +1,199 @@
+
+.navbar {
+  background-color:transparent;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+  position: relative;
+}
+
+.btn-CreateRoom {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  width: 150px;
+  height: 50px;
+  margin-right: 1000px; 
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5), 
+               -4px -4px 4px rgba(250, 250, 250, 0.5),
+               8px 8px 10px rgba(0, 0, 0, 0.5), 
+               -8px -8px 10px rgba(255, 255, 255, 0.5);
+  margin-left: 0;
+  position: relative;
+  overflow: hidden; 
+  z-index: 2; 
+}
+
+.btn-CreateRoom:hover {
+  animation: btnMove 0.5s infinite alternate;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  color: black;
+  background-color: white;
+}
+/* btn-animation */
+@keyframes btnMove {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate3d(-1px, -5px, 10px);
+  }
+  50% {
+    transform: translate3d(5px, -5px, 10px);
+  }
+}
+
+/* hover animation */
+.btn-CreateRoom:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #2b2222, transparent 30%);
+  animation: bloodEffect 2s infinite alternate;
+  z-index: 1;
+}
+
+@keyframes bloodEffect {
+  0% {
+    transform: scale(1.5) translate(0, 0);
+    
+   
+  }
+  100% {
+   transform: scale(5) translate(-5px, -2px);
+   background-color: #f75454;
+   
+  }
+}
+.btn-CreateRoom:hover,
+.btn-CreateRoom:hover * {
+  color: white;
+}
+
+.btn-FindRoom {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5), 
+               -4px -4px 4px rgba(250, 250, 250, 0.5),
+               8px 8px 10px rgba(0, 0, 0, 0.5), 
+               -8px -8px 10px rgba(255, 255, 255, 0.5);
+  overflow: hidden; 
+  z-index: 2; 
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.btn-FindRoom:hover {
+  animation: btnMove 0.5s infinite alternate;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  color: black;
+  background-color: white;
+}
+
+.btn-FindRoom:hover::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #2b2222, transparent 30%);
+  animation: bloodEffect 2s infinite alternate;
+  z-index: 1;
+}
+
+.btn-FindRoom:hover,
+.btn-FindRoom:hover * {
+  color: white;
+}
+
+
+.logout-btn {
+  position: fixed;
+  top: 530px;
+  right: 20px;
+}
+
+.logout-btn button {
+  background-color: #c82333;
+  color: white;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5), 
+               -4px -4px 4px rgba(250, 250, 250, 0.5),
+               8px 8px 10px rgba(0, 0, 0, 0.5), 
+               -8px -8px 10px rgba(255, 255, 255, 0.5);
+  display: flex; 
+  align-items: center; 
+  overflow: hidden; 
+  justify-content: center; 
+}
+
+.logout-btn button:hover {
+  animation: btnMove 0.5s infinite alternate;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+.logout-btn button:hover::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #ffffff, transparent 30%);
+  animation: bloodEffect 2s infinite alternate;
+  z-index: 1;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    display: block;
+  }
+
+  .btn-CreateRoom,
+  .btn-FindRoom {
+    position: static;
+    margin: 10px auto;
+    width: 90%;
+    text-align: center;
+  }
+
+  .logout-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 90%;
+    text-align: center;
+  }
+
+  .logout-btn button {
+    width: 100%;
+  }
+}

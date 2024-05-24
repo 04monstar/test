@@ -1,0 +1,211 @@
+/* Global styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  /* Toggle buttons */
+  
+  .toggle-btn-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .toggle-btn-container button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .toggle-btn-container button:hover {
+    background-color: #444;
+  }
+  
+  /* Chat container */
+  
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 400px;
+    margin: 20px auto;
+  }
+  
+  .chat-messages {
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+  }
+  
+  .message p {
+    margin-bottom: 0;
+  }
+  
+  .message strong {
+    color: #333;
+  }
+  
+  .chat-input {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .chat-input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .send-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .send-btn:hover {
+    background-color: #444;
+  }
+  
+  /* Code container */
+  
+  .code-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 600px;
+    margin: 20px auto;
+  }
+  
+  .CodeMirror {
+    height: 400px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .CodeMirror-focused {
+    border-color: #aaa;
+  }
+  
+  .run-code-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .run-code-btn:hover {
+    background-color: #444;
+  }
+  
+  .theme-select {
+    margin-top: 20px;
+  }
+  
+  .theme-select label {
+    margin-right: 10px;
+  }
+  
+  .theme-select select {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+  .output-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  .output-container h3 {
+    margin-top: 0;
+  }
+  
+  .output-container pre {
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  /* Leave button */
+  
+  .leave-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px auto;
+  }
+  
+  .leave-btn:hover {
+    background-color: #444;
+  }
+  
+  /* Video container */
+  
+  .video-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .video-container video {
+    width: 40%;
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  
+  .start-call-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px auto;
+  }
+  
+  .start-call-btn:hover {
+    background-color: #444;
+  }

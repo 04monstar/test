@@ -1,0 +1,192 @@
+.createRoom {
+    max-width: 600px;
+    background-color: #ffffff;
+    margin: 120px auto 100px auto;
+    padding: 30px;
+    position: relative;
+    overflow: auto;
+    border: 5px solid transparent;
+    border-radius: 30px;
+    box-shadow: 
+      0 60px 120px rgba(224, 76, 76, 0.8), 
+      0 90px 180px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    filter: drop-shadow(0 0 20px rgba(78, 76, 76, 0.5));
+  }
+  
+  .createRoom::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border: 5px solid transparent;
+    border-radius: 35px;
+    z-index: -1;
+    overflow: hidden;
+    background-image: linear-gradient(to right, transparent, #4b4747, transparent);
+    background-size: 200% 100%;
+    animation: lineTravel 3s infinite;
+  }
+  
+  .room-container {
+    width: 100%;
+  }
+  
+.text-header {
+    color: #000;
+    font-size: 44px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+    text-shadow: 
+    1px 1px 0 #fff,
+    2px 2px 0 #aaa,
+    3px 3px 0 #555,
+    4px 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .room-form {
+    width: 100%;
+  }
+  
+  .room-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .room-form label {
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .room-form input[type="text"],
+  .room-form textarea,
+  .room-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .room-form input[type="text"]:hover,
+  .room-form textarea:hover,
+  .room-form select:hover {
+    border-color: #666;
+  }
+  
+  .room-form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    animation: popup 0.5s forwards;
+  }
+  
+  .room-form input[type="submit"]:hover {
+    background-color: #333;
+  }
+  
+  @keyframes popup {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .room-form input[type="submit"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #870000, transparent 30%);
+    animation: blood 1s infinite alternate;
+  }
+  
+  @keyframes blood {
+    0% {
+      transform: scale(1.5) translate(0, 0);
+    }
+    100% {
+      transform: scale(7) translate(-10px, -10px);
+    }
+  }
+  
+  .room-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .room-form input[type="email"]:hover{
+    content: 'enter your email for share roomId';
+    border: 2px solid #333;
+  }
+  .btn{
+    padding: 20px 10px;
+    width: 300px;
+    background-color: #000000; 
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s, margin 0.3s;
+    margin-top: 50px;
+    left: 20%;
+  }
+  .btn:hover{
+    animation: move 0.5s infinite alternate;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    color: rgb(0, 0, 0);
+    background-color: white;
+  }
+  @keyframes move {
+    0%, 100% {
+      transform: translate3d(0, 0, 0);
+    }
+    25% {
+      transform: translate3d(-1px, -5px, 10px);
+    }
+    50% {
+      transform: translate3d(5px, -5px, 10px);
+    }
+  }
+  .btn:hover::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #870000, transparent 30%);
+    animation: effect 1s infinite alternate;
+  }
+  
+  @keyframes effect {
+    0% {
+      transform: scale(1.5) translate(0, 0);
+    }
+    100% {
+      transform: scale(7) translate(-10px, -10px);
+    }
+  }
